@@ -656,11 +656,7 @@ export default function Dashboard() {
           </div>
         </div>
         {/* sidebar end*/}
-        <div
-          className={
-            reducedWidth ? "pamela2 invoicepage" : "pamela invoicepage"
-          }
-        >
+        <div className={reducedWidth ? "pamela2" : "pamela"}>
           <div className="dashboardContainer row">
             <div className="col-md-2 card cardi">
               <span className="smart-figure">

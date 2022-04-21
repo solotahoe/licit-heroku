@@ -644,7 +644,7 @@ export default function WellsFargo() {
                   <td>
                     <Link
                       to={`/invoice/wellsfargo/${item.buy}`}
-                      state={{ from: "wellesfargo", amount: `${item.buy}` }}
+                      state={{ from: "wellsfargo", amount: `${item.buy}` }}
                     >
                       <button className="btn table-btn">
                         {" "}

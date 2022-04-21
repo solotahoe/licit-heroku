@@ -645,11 +645,7 @@ export default function Invoice(props) {
           </div>
         </div>
         {/* sidebar end*/}
-        <div
-          className={
-            reducedWidth ? "pamela2 invoicepage" : "pamela invoicepage"
-          }
-        >
+        <div className={reducedWidth ? "pamela2" : "pamela"}>
           <div className="confirmationPopUp" style={{ opacity: Opacity }}>
             <span>
               {" "}
@@ -683,12 +679,8 @@ export default function Invoice(props) {
                   "Barclays [Current Account (PINsentry disabled)]"}
                 {from == "skrill" &&
                   "Barclays [Current Account (PINsentry disabled)]"}
-                {from == "huntington" &&
-                  "Barclays [Current Account (PINsentry disabled)]"}
-                {from == "barclays" &&
-                  "Barclays [Current Account (PINsentry disabled)]"}
-                {from == "bbandt" &&
-                  "Barclays [Current Account (PINsentry disabled)]"}
+                {from == "Huntingtonbank" && "[CHECKING ACCOUNT]"}
+                {from == "barclays" && "[Current Account (PINsentry disabled)]"}
                 {from == "bbva" &&
                   "Barclays [Current Account (PINsentry disabled)]"}
                 {from == "nfcu" &&
@@ -698,7 +690,7 @@ export default function Invoice(props) {
                 {from == "pnc" &&
                   "Barclays [Current Account (PINsentry disabled)]"}
                 {from == "bbandt" &&
-                  "Barclays [Current Account (PINsentry disabled)]"}
+                  "Truist Financial Corporation [CHECKING ACCOUNT]"}
                 {from == "scotia" &&
                   "Barclays [Current Account (PINsentry disabled)]"}
               </p>
@@ -715,8 +707,8 @@ export default function Invoice(props) {
             </div>
             <div className="awaitingPayment col-md-5">
               <div className="awatingPayment">
-                <p>
-                  <div className="spinnerBorder"></div>Awatingng btc Payment{" "}
+                <p className="awaitingPaymentmsg">
+                  <div className="spinnerBorder"></div>AWAITING BTC PAYMENT...{" "}
                 </p>
               </div>
               <div className="addressInvoice">

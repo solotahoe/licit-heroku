@@ -549,12 +549,14 @@ img.telegramIcon {
 .fa-print {
   margin-right: 5px;
 }
-
-.imgqrcode img {
-  height: 250px;
-  width: 250px;
+.awaitingPaymentmsg {
+  font-weight: bold;
+}
+img.QrcodeInvoicePage {
+  height: 200%;
+  width: 200%;
   text-align: center;
-  margin-left: 50px;
+  margin-left: -50%;
   margin-top: 0;
   object-fit: contain;
 }
@@ -834,6 +836,14 @@ ul.tabConttent li {
 /* formating the dashboard page end */
 
 @media only screen and (max-width: 768px) {
+  img.QrcodeInvoicePage {
+    height: 200%;
+    width: 200%;
+    text-align: center;
+    margin-left: -50%;
+    margin-top: 10px;
+    object-fit: contain;
+  }
   .fa-arrows-alt {
     display: none;
   }

@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "licitshoplogs"
-  }
+    "default": "licitbanklogsite",
+    "licitbanklogsite": "licitbanklogsite"
+  },
+  "targets": {}
 }

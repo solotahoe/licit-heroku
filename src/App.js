@@ -54,7 +54,12 @@ function App() {
           exact={true}
           element={<Invoice />}
         />
-        <Route path="/Dashboard" exact={true} element={<Dashboard />} />
+        <Route
+          path="/
+        "
+          exact={true}
+          element={<Dashboard />}
+        />
         <Route
           path="/woodforestbank"
           exact={true}
